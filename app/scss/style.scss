@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.test {
+    margin: 0;
+    padding: 12px;
+}
+body {
+    background-color: red;
+    padding-left: 20px;
+}
+.box {
+    display: flex;
+}
