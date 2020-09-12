@@ -64,14 +64,16 @@ span {
 
 .header__menu {
     background-color: #fff;
-   
+
 }
+
 .header__menu-inner {
     display: flex;
     height: 80px;
     align-items: center;
     justify-content: space-between;
 }
+
 .menu {
     display: flex;
     align-items: center;
@@ -88,12 +90,13 @@ span {
 .menu__list li+li {
     margin-left: 30px;
 }
-  
+
 
 form {
     max-width: 360px;
     width: 100%;
 }
+
 input {
     display: block;
     width: 360px;
@@ -106,9 +109,11 @@ input {
     line-height: 30px;
     position: relative;
 }
+
 input::placeholder {
     color: #898f96;
 }
+
 input:focus {
     border: 1px solid #898f96;
 }
@@ -123,11 +128,74 @@ button {
     right: 258px;
     top: 117px;
     cursor: pointer;
+    outline: none;
 }
+
 button span {
     color: #fff;
     font-size: 15px;
     padding: 15px 20px;
     margin: 0 auto;
 }
-  
+
+.create {
+    background-color: #294cce;
+    min-height: 720px;
+}
+
+.create__inner {
+    text-align: center;
+    padding: 180px 0 120px;
+    color: #fff;
+}
+
+.create__title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.create__main-title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.create__desc {
+    font-size: 20px;
+    line-height: 72px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.create__button {
+    display: flex;
+    display: inline-block;
+    border: 1px solid #fff;
+    margin: 30px;
+    color: #fff;
+    height: 55px;
+    width: 190px;
+    border-radius: 24px;
+    position: relative;
+}
+
+.create__btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    margin: 30px;
+    color: #fff;
+    height: 55px;
+    width: 190px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.create__btn:hover {
+    background-color: #fff;
+    color: #0674ec;
+    transition: all .5s;
+}
