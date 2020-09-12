@@ -68,16 +68,15 @@
                             </ul>
                         </nav>
                         <div class="search">
-                            <div class="container">
-                                <div class="search-inner">
-                                    <div class="search__inner-form">
-                                        <form>
-                                            <input type="text" placeholder="Search product here..." required>
-                                            <button type="submit">
-                                                <span class="lnr lnr-magnifier"></span>
-                                            </button>
-                                        </form>
-                                    </div>
+                            <div class="search-inner">
+                                <div class="search__inner-form">
+                                    <form class="search__form">
+                                        <input class="search__input" type="search" placeholder="Search product here..."
+                                            required>
+                                        <button class="search-btn" type="submit">
+                                            <span class="lnr lnr-magnifier"></span>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -99,23 +98,31 @@
                 <div class="create__desc">
                     MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                 </div>
-                <!-- <div class="create__button"> -->
-                    <a class="create__btn" href="#">
-                        View All Products
-                    </a>
-
-                <!-- </div> -->
-                <!-- <div class="create__button"> -->
-                    <a class="create__btn" href="#">
-                        Popular Products
-                        </a>
-
-                <!-- </div> -->
+                <a class="create__btn" href="#">
+                    View All Products
+                </a>
+                <a class="create__btn" href="#">
+                    Popular Products
+                </a>
 
             </div>
         </div>
     </section>
-
+    <div class="create__search">
+        <div class="create__form-inner">
+            <form class="create__form">
+                <input class="create__input" type="search" placeholder="Search your products..." required>
+                <select class="create__select" name="category">
+                    <option value="All category" selected>All category 1</option>
+                    <option value="All category" selected>All category 2</option>
+                    <option value="All category" selected>All category 3</option>
+                </select>
+                <button class="create-btn" type="submit">Search Now</button>
+            </form>
+            <div class="create__box-one"></div>
+            <div class="create__box-two"></div>
+        </div>
+    </div>
 
 
 
