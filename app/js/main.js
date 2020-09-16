@@ -8,9 +8,10 @@ $(function(){
 
 
 
-      $('.featured__item').slick({
-        
-      });
+      // $('.').slick({
+      //   arrows: false,
+      //   variableWidth: true
+      // });
 
     var mixer = mixitup('.products__inner-box');
 
