@@ -38,6 +38,16 @@ $(function(){
         prefix: "$"
       });
 
+      $('.lnr-list').on('click', function(){
+        $('.page__product-item').addClass('list');
+        $('.lnr-list').addClass('active');
+        $('.lnr-move').removeClass('active');
+      });
+      $('.lnr-move').on('click', function(){
+        $('.page__product-item').removeClass('list');
+        $('.lnr-move').addClass('active');
+        $('.lnr-list').removeClass('active');
+      });
 
 var mixer = mixitup('.products__inner-box');
 
