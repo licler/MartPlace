@@ -5,7 +5,10 @@ $(function(){
         rating: 4.5,
         starWidth: '13px'
       });
-
+      $(".rate-star").rateYo({
+        rating: 4.5,
+        starWidth: '30px'
+      });
 
 
       $('.featured__slider').slick({
