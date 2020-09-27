@@ -3226,10 +3226,13 @@ span {
     background-color: #eff1f5;
     padding: 65px 0px 110px;
 }
+.register {
+    padding-bottom: 120px;
+}
 .login__inner {
-   width: 1140px;
-   display: flex;
-   justify-content: center;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
 }
 .login__item {
     width: 555px;
@@ -3237,6 +3240,10 @@ span {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.register__item {
+    height: 915px;
 }
 
 .login__item-box {
@@ -3248,7 +3255,9 @@ span {
     align-items: center;
     text-align: center;
 }
-
+.register-box {
+    height: 178px;
+}
 .login__item-title {
     font-size: 26px;
     margin-bottom: 20px;
@@ -3259,11 +3268,21 @@ span {
     color: #555555;
 }
 
+.register__item-desc {
+    width: 440px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #555555;
+}
+
 .login__item-content {
     padding: 25px 50px 50px;
     text-align: left;
 }
-
+.register-content {
+    padding: 20px 45px 50px;
+    height: 730px;
+}
 .login-name {
     font-size: 16px;
     font-weight: 500;
@@ -3278,7 +3297,9 @@ span {
     outline: none;
     background-color: #f4f5f8;
 }
-
+.register-input {
+    margin-bottom: 25px;
+}
 .login-input::placeholder {
     color: #898f96
 }
@@ -3307,15 +3328,20 @@ span {
     margin-bottom: 35px;
     cursor: pointer;
 }
+
 .login__forget-wrapper {
     display: flex;
     justify-content: space-between;
 }
+
 .login__forget span {
     font-size: 16px;
     color: #898f96;
     margin-left: 0px;
     margin-right: -4px;
+}
+.register__forget {
+    margin-bottom: 60px;
 }
 
 .password-link {
@@ -3323,16 +3349,20 @@ span {
     margin-right: 5px;
     margin-left: 8px;
 }
+
 .login-link {
-    color: #0674ec;  
+    color: #0674ec;
     margin-left: 4px;
 }
+
 .login__account span {
     font-size: 16px;
     color: #898f96;
     margin-left: 0px;
 }
+
 .account-link {
-    color: #0674ec;  
+    color: #0674ec;
     margin-left: 4px;
 }
+  
