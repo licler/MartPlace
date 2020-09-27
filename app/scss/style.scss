@@ -3221,19 +3221,23 @@ span {
 
 // end favorites
 
-// start login
+// start login, register
 .login {
     background-color: #eff1f5;
     padding: 65px 0px 110px;
 }
+
 .register {
     padding-bottom: 120px;
 }
-.login__inner {
+
+.login__inner,
+.password__inner {
     width: 1140px;
     display: flex;
     justify-content: center;
 }
+
 .login__item {
     width: 555px;
     height: 610px;
@@ -3243,7 +3247,7 @@ span {
 }
 
 .register__item {
-    height: 915px;
+    min-height: 915px;
 }
 
 .login__item-box {
@@ -3255,9 +3259,11 @@ span {
     align-items: center;
     text-align: center;
 }
+
 .register-box {
     height: 178px;
 }
+
 .login__item-title {
     font-size: 26px;
     margin-bottom: 20px;
@@ -3279,10 +3285,12 @@ span {
     padding: 25px 50px 50px;
     text-align: left;
 }
+
 .register-content {
     padding: 20px 45px 50px;
     height: 730px;
 }
+
 .login-name {
     font-size: 16px;
     font-weight: 500;
@@ -3297,9 +3305,11 @@ span {
     outline: none;
     background-color: #f4f5f8;
 }
+
 .register-input {
     margin-bottom: 25px;
 }
+
 .login-input::placeholder {
     color: #898f96
 }
@@ -3340,6 +3350,7 @@ span {
     margin-left: 0px;
     margin-right: -4px;
 }
+
 .register__forget {
     margin-bottom: 60px;
 }
@@ -3365,4 +3376,39 @@ span {
     color: #0674ec;
     margin-left: 4px;
 }
-  
+
+//   end login, register
+
+// start password
+.password {
+    background-color: #eff1f5;
+    padding: 70px 0px 120px;
+}
+
+.password__item {
+    width: 555px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.password__item-box {
+    height: 197px;
+    padding: 55px 45px 25px;
+    border-bottom: 1px solid #e8ebf0;
+}
+
+.password__item-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555555;
+}
+
+.password__item-content {
+    padding: 35px 45px 60px;
+}
+
+.password-name {
+    margin-top: 36px;
+    font-weight: 500;
+}
