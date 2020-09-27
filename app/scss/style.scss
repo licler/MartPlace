@@ -3167,7 +3167,7 @@ span {
     top: 8px;
     right: -24px;
     cursor: pointer;
-    
+
 }
 
 .favorites-page__filter-menu {
@@ -3196,20 +3196,143 @@ span {
 .favorites-page__filter-menu a:hover {
     color: #0674ec;
 }
+
 .favorites__found-title {
     margin-left: -28px;
 }
-.favorites-page__filter-wrapper:hover  .favorites-page__filter-menu {
+
+.favorites-page__filter-wrapper:hover .favorites-page__filter-menu {
     display: block;
     transition: all .9s;
 }
+
 .parth-favorites {
     padding: 65px 0px 110px;
 }
+
 .favorites__items {
     flex-wrap: wrap;
     margin-bottom: 65px;
 }
+
 .favorites-pagination {
     text-align: center;
+}
+
+// end favorites
+
+// start login
+.login {
+    background-color: #eff1f5;
+    padding: 65px 0px 110px;
+}
+.login__inner {
+   width: 1140px;
+   display: flex;
+   justify-content: center;
+}
+.login__item {
+    width: 555px;
+    height: 610px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.login__item-box {
+    height: 150px;
+    border-bottom: 1px solid #e8ebf0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login__item-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.login__item-desc {
+    font-size: 16px;
+    color: #555555;
+}
+
+.login__item-content {
+    padding: 25px 50px 50px;
+    text-align: left;
+}
+
+.login-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.login-input {
+    height: 50px;
+    width: 100%;
+    padding: 10px 70px 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #f4f5f8;
+}
+
+.login-input::placeholder {
+    color: #898f96
+}
+
+.login-checkbox {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.login-remember__text {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #555555;
+}
+
+.login-button {
+    display: block;
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    background-color: #0674ec;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.login__forget-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.login__forget span {
+    font-size: 16px;
+    color: #898f96;
+    margin-left: 0px;
+    margin-right: -4px;
+}
+
+.password-link {
+    color: #0674ec;
+    margin-right: 5px;
+    margin-left: 8px;
+}
+.login-link {
+    color: #0674ec;  
+    margin-left: 4px;
+}
+.login__account span {
+    font-size: 16px;
+    color: #898f96;
+    margin-left: 0px;
+}
+.account-link {
+    color: #0674ec;  
+    margin-left: 4px;
 }
