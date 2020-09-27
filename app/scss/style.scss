@@ -3531,26 +3531,32 @@ span {
     color: #555555;
     margin-bottom: 50px;
 }
+
 .pricing__items {
     display: flex;
     justify-content: space-between;
 }
+
 .pricing__item {
     width: 365px;
     border-radius: 4px;
     background-color: #fff;
     height: 100%;
-    
+
 }
+
 #one {
     border-top: 3px solid #ff6a6c;
 }
+
 #two {
     border-top: 3px solid #0674ed;
 }
+
 #three {
     border-top: 3px solid #feb71d;
 }
+
 .pricing__item-inner {
     padding: 0px 30px 30px;
 }
@@ -3563,20 +3569,24 @@ span {
     border-bottom: 1px solid #e8ebf0;
     padding: 22px;
 }
+
 .pricing__item-num {
     font-size: 36px;
     margin-bottom: 25px;
     padding: 22px;
     text-align: center;
 }
+
 .pricing__item-num span {
     margin-left: 0px;
     font-size: 16px;
     color: #555555;
 }
+
 .pricing__item-num sup {
     font-size: 18px;
 }
+
 .pricing__item-list {
     // margin: 0px;
     // padding: 0px;
@@ -3585,6 +3595,7 @@ span {
     //list-style-image: url('../images/pricing/pricing-icon_1.png');
 
 }
+
 .pricing__item-list li {
     margin-bottom: 15px;
     font-size: 16px;
@@ -3592,6 +3603,7 @@ span {
     padding-left: 25px;
     //list-style: circle;
 }
+
 .pricing__item-list span {
     color: #000;
     font-size: 16px;
@@ -3604,11 +3616,12 @@ span {
     content: "\2022";
     color: gray;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     font-size: 20px;
     width: 16px;
     margin-left: -16px;
 }
+
 .pricing__item-link {
     width: 300px;
     height: 50px;
@@ -3619,20 +3632,26 @@ span {
     padding: 15px 0;
     margin-top: 40px;
 }
+
 #one-link {
     background-color: #ff6a6c;
 }
+
 #two-link {
     background-color: #0674ed;
 }
+
 #three-link {
-    background-color:  #feb71d;;
+    background-color: #feb71d;
+    ;
 }
+
 .pricing__item-list .lnr-question-circle {
     font-size: 18px;
     color: #555555;
     margin-left: 10px;
 }
+
 //   end pricing
 
 // start terms
@@ -3640,22 +3659,260 @@ span {
     background-color: #eff1f5;
     padding: 60px 0px 120px;
 }
+
 .terms__item {
     background-color: #fff;
     padding-bottom: 65px;
 }
+
 .terms__item-wrapper {
     border-bottom: 1px solid #e8ebf0;
     padding: 30px 30px 20px 30px
 }
+
 .terms__item-title {
     font-size: 24px;
 
 }
+
 .terms__item-text {
     padding: 25px 35px;
     font-size: 16px;
     line-height: 30px;
     color: #555555;
 }
+
 // end terms
+
+// start version-page
+
+.version-page {
+    padding: 65px 0px 112px;
+    background-color: #eff1f5;
+}
+
+.version-page__wrapper {
+    display: flex;
+}
+
+.version-page__item {
+    background-color: #fff;
+    width: 750px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+}
+
+.version-page__images {
+    width: 750px;
+    height: 430px;
+    margin-bottom: 25px;
+}
+
+.version-page__content-info {
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 25px 25px 25px;
+}
+
+.version-page__content-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 0 25px;
+
+}
+
+#version-one__title {
+    color: #0674ec;
+}
+
+.version-page__content-author .lnr-user,
+.version-page__content-author span {
+    margin-left: 0px;
+    font-size: 15px;
+    color: #898f96;
+}
+
+.version-page__author-link {
+    color: #0674ec;
+    margin-left: 4px;
+}
+
+.version-page__content-data .lnr-clock {
+    font-size: 15px;
+    color: #898f96;
+}
+
+.version-page__data-link {
+    font-size: 15px;
+    color: #898f96;
+}
+
+.version-page__content-comment .lnr-bubble {
+    font-size: 15px;
+    color: #898f96;
+}
+
+.version-page__comment-link {
+    font-size: 15px;
+    color: #898f96;
+}
+
+.version-page__content-review .lnr-eye {
+    font-size: 15px;
+    color: #898f96;
+}
+
+.version-page__review {
+    font-size: 15px;
+    color: #898f96;
+    display: inline-block;
+}
+
+.version-page__content-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555555;
+    padding: 25px;
+}
+
+.version-page__link {
+    width: 140px;
+    height: 45px;
+    background-color: #0674ec;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 13px 20px;
+    margin-left: 25px;
+}
+
+.version-pagination {
+    text-align: left;
+    margin-top: 60px;
+}
+
+// end version-page
+
+// start version__popular
+.version-page__aside {
+    margin-left: 30px;
+}
+
+.version__aside-item {
+    background-color: #fff;
+    width: 360px;
+    height: 190px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.version__search-wrapper {
+    padding: 25px;
+    border-bottom: 1px solid #e8ebf0;
+}
+
+.version__search-title {
+    font-size: 20px;
+}
+
+.version__search-content {
+    padding: 25px;
+}
+
+.version-form {
+    position: relative;
+}
+
+.version-input {
+    display: block;
+    width: 310px;
+    height: 44px;
+    padding: 20px 90px 20px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #d9dfe5;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.version-btn {
+    height: 45px;
+    background-color: #0674ec;
+    border: none;
+    border-radius: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.version-btn .lnr-magnifier {
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+
+.version__popular-item {
+    background-color: #fff;
+    width: 360px;
+    height: 540px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.version__popular-wrapper {
+    padding: 25px;
+    border-bottom: 1px solid #e8ebf0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.version__popular-title {
+    color: #0674ec;
+    font-size: 20px;
+    font-weight: 500;
+}
+.version__latest-title {
+    font-size: 20px;
+}
+
+.version__popular-content {
+    padding: 25px;
+    display: flex;
+}
+.version__popular-images {
+    display: flex;
+}
+.version__popular-page {
+    margin-left: 10px;
+    
+}
+.version__popular-name {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+
+}
+.version__popular-data .lnr-clock {
+    margin-left: 0px;
+    font-size: 15px;
+    color: #898f96;
+}
+.version__popular-link {
+    font-size: 15px;
+    color: #898f96; 
+}
+
+
+
+
+
