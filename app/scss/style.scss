@@ -3633,4 +3633,29 @@ span {
     color: #555555;
     margin-left: 10px;
 }
-  
+//   end pricing
+
+// start terms
+.terms {
+    background-color: #eff1f5;
+    padding: 60px 0px 120px;
+}
+.terms__item {
+    background-color: #fff;
+    padding-bottom: 65px;
+}
+.terms__item-wrapper {
+    border-bottom: 1px solid #e8ebf0;
+    padding: 30px 30px 20px 30px
+}
+.terms__item-title {
+    font-size: 24px;
+
+}
+.terms__item-text {
+    padding: 25px 35px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555555;
+}
+// end terms
