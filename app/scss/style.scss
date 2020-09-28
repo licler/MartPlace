@@ -4054,3 +4054,28 @@ span {
 .version__banner-desc {
     font-size: 16px;
 }
+// end version__banner
+
+// start contact
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 280;
+    align-items: center;
+  
+}
+.contact__inner {
+    width: 260px;
+    text-align: center;
+    margin: 0 auto;
+}
+.contact__inner-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact__inner-desc {
+    font-size: 20px;
+    color: #fff;
+}
