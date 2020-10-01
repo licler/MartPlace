@@ -274,6 +274,7 @@ span {
     color: #fff;
     position: relative;
     padding-right: 15px;
+    margin-left: -15px;
 }
 
 .breadcrumbs__list a::after {
@@ -4252,4 +4253,41 @@ span {
     right: 260px;
 }
  
+// end map-page
+.error-page {
+    padding: 70px 0px 100px;
+}
+.error-page__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error-page__images {
+    background-image: url('../images/error-page/error.png');
+    width: 393px;
+    height: 447px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.error-page__title {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.error-page__link {
+    width: 190px;
+    height: 50px;
+    background-color: #0674ec;
+    color: #fff;
+    border-radius: 22px;
+    font-size: 15px;
+    padding: 15px 35px;
+    text-align: center;
+    margin: 0 auto;
+
+}
   
+// end error-page
