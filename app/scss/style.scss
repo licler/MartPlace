@@ -46,7 +46,7 @@ span {
     height: 22px;
     background-color: #ff6a6c;
     color: #fff;
-    right: 84px;
+    right: -18px;
     top: -15px;
     border-radius: 9px;
     text-align: center;
@@ -1111,7 +1111,7 @@ span {
 .followers__item-category,
 .parth-author__category {
     position: relative;
-    padding-left: 45px;
+    padding-left: 20px;
     text-align: center;
     font-size: 15px;
     line-height: 30px;
@@ -4350,6 +4350,7 @@ span {
     padding-left: 40px;
     text-align: center;
     padding-top: 2px;
+    text-transform: none;
 
 }
 
@@ -4443,7 +4444,7 @@ span {
 
 .header__messages {
     width: 370px;
-    height: 480px;
+    // height: 480px;
     background-color: #fff;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     border-top: 1px solid #0674ec;
@@ -4463,14 +4464,21 @@ span {
     top: -32px;
     right: -3px;
 }
-
+.alarm__messages::before {
+    left: -3px;
+}
+.like__main-wrapper {
+    padding: 0px 20px;
+}
 .messages__box {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #e8ebf0;
 }
-
+.main-box {
+    padding: 20px 0px;
+}
 .messages__box-title {
     font-size: 18px;
 }
@@ -4567,6 +4575,7 @@ span {
 
 .catalog-menu a {
     padding: 0px 10px;
+    text-transform: none;
 }
 
 .menu__list li:hover .active {
@@ -4612,7 +4621,9 @@ span {
 
 .pages__title {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Quicksand-Medium';
+    color: #000;
 
 }
 
@@ -4630,11 +4641,15 @@ span {
     font-size: 15px;
     line-height: 42px;
     color: #54667a;
+    text-transform: none;
+}
+.header__pages-link {
+    font-size: 15px;
 }
 
 .header__pages-list {
     margin-top: 25px;
-    margin-right: 35px;
+    padding: 0 15px;
 
 }
 
@@ -4642,34 +4657,267 @@ span {
     margin: 0px;
 }
 
+.header__pages-list--first {
+    margin-right: 40px;
+}
+
 
 // end  header__page
 
-.like-title span {
+// start messages-like
+.like-wrapper {
+    padding: 0px 20px;
+}
+.messages__like-title span {
     color: #333333;
     font-size: 16px;
     margin-left: 0px;
+    margin-right: 5px;
 }
 
-.like-title {
+.messages__like-title {
     color: #747a86;
     font-size: 15px;
+    margin-bottom: 5px;
 }
-.messages__inner-like {
+
+.messages__like-inner {
+    display: flex;
+    border-bottom: 1px solid #e8ebf0;
+    padding: 15px 0px
+}
+#like-last {
+    border-bottom: none;
+}
+
+.like__inner-shell {
+    margin-left: 15px;
+}
+
+.like__inner-text {
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+}
+
+.like__inner-text a {
     color: #0674ec;
+    font-size: 15px;
 }
-.messages__inner-box .lnr-heart {
+
+.like__heart-wrapper .lnr-heart {
+    
+    color: #0674ec;
     position: absolute;
-    color: #0674ec;
     top: 6px;
     right: 6px;
-    margin-left: 0px;
-    
 }
-.messages__like-box {
+.like__bubble-wrapper .lnr-bubble {
+    color: #7347c1;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.like__cart-box .lnr-cart {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #ff6a6c;
+}
+.like__star-wrapper .lnr-star {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #62d03a;
+}
+.like__inner-notice {
+    font-size: 14px;
+    color: #747a86;
+ 
+}
+
+.like__heart-wrapper {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: #e6f1fd;
     position: relative;
+    margin-right: -65px;
+    margin-top: -5px;
 }
+.like__bubble-wrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f1ecf9;
+    position: relative;
+    margin-right: -65px;
+    margin-top: -5px;
+}
+.like__cart-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff0f0;
+    position: relative;
+    margin-right: -65px;
+    margin-top: -5px;
+}
+.like__star-wrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #effaeb;
+    position: relative;
+    margin-right: -65px;
+    margin-top: -5px;
+}
+.header__alarm {
+    position: relative;
+    height: 90px;
+    margin-top: 60px;
+}
+.header__alarm .alarm__messages {
+    position: absolute;
+    top: 61px;
+    left: 10px;
+    z-index: 500;
+    display: none;
+}
+
+.header__alarm:hover .header__messages {
+    display: block;
+}
+// end messages-like
+
+// start messages__basket
+.header__basket {
+    position: relative;
+    height: 90px;
+    margin-top: 60px;
+}
+.header__basket .messages__basket {
+    position: absolute;
+    top: 61px;
+    right: -17px;
+    z-index: 500;
+    display: none;
+}
+.header__basket:hover .messages__basket {
+    display: block;
+}
+.messages__basket {
+    border-top: 1px solid #0674ec;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    width: 400px;
+    position: relative;
+}
+.messages__basket::before {
+    content: "";
+    background-image: url('../images/header/tringle.png');
+    width: 65px;
+    height: 65px;
+    display: block;
+    position: absolute;
+    top: -32px;
+    right: -3px;
+}
+.messages__basket-item {
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid #e8ebf0;
+}
+.messages__basket-shell {
+    margin-left: 15px;
+}
+.messages__basket-content {
+    display: flex;
+    justify-content: space-between;
+}
+.messages__basket-wrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f1ecf9;
+}
+.messages__basket-wrapper .lnr-trash {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 15px;
+    color: #818c98;
+}
+.messages__basket-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.messages__basket-info {
+    display: flex;
+    justify-content: space-between;
+}
+.messages__basket-category {
+    position: relative;
+}
+.messages__category-name {
+    color: #7347c1;
+    padding-left: 18px;
+}
+.messages__category-link img {
+    top: 1px;
+    position: absolute;
+    left: 0px;
+}
+.messages__category-wrapper {
+    width: 50px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: #e6f1fd;
+    text-align: center;
+    padding: 5px;
+}
+.messages__category-wrapper a {
+    color: #0674ec;
+    
+}
+.messages__total {
+    height: 70px;
+    padding: 20px;
+}
+.messages__total-title {
+   font-size: 18px;
+   font-weight: 500;
+   text-align: right;
+}
+.messages__total-title span {
+    margin-left: 30px;
+}
+.messages__btn {
+    
+    height: 60px;
+    display: flex;
+     border-radius: 0px 0px 4px 4px;
+}
+.messages-btn__link-first {
+    background-color: #7347c1;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0px 0px 0px 4px;
+}
+.messages-btn__link-second {
+    background-color: #0674ec;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0px 0px 4px 0px;
+}
+
+
+// end messages__basket
+
