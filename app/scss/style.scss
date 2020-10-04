@@ -486,7 +486,6 @@ span {
 .featured__box {
     display: flex;
 }
-
 .featured__wrapper,
 .followers__wrapper {
     background-color: #fff;
@@ -501,9 +500,7 @@ span {
 .followers__title {
     font-size: 30px;
     line-height: 28px;
-
 }
-
 .featured__slider-item {
     max-width: 555px;
     min-height: 450px;
@@ -514,12 +511,17 @@ span {
     justify-content: space-between;
 }
 
-.featured__box-images {
+.featured__box-images img:hover {
+    opacity: .4;
+}
+.featured__box-images:hover {
     min-height: 450px;
     background-repeat: no-repeat;
     display: block;
     background-position: center;
     background-size: cover;
+    background: linear-gradient(  rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+    opacity: 0.902;
 }
 
 .featured__link-btn-one {
@@ -585,12 +587,6 @@ span {
 .featured__box-images:hover .featured__link-btn-one {
     display: block;
 }
-
-.featured__box .featured__box-images {
-    background: linear-gradient(to bottom, #f38181, #fce38a);
-}
-
-
 
 
 .featured__content-wrapper {
@@ -1146,6 +1142,9 @@ span {
     align-items: center;
     padding-left: 25px;
     color: #7347c1;
+}
+.name-category {
+    padding-left: 50px;
 }
 
 .parth-author__category img {
@@ -2325,7 +2324,9 @@ span {
     position: relative;
 
 }
-
+// .product-page__form-first {
+//     position: relative;
+// }
 .product-page__form select {
     margin-right: 25px;
     font-size: 14px;
@@ -2335,15 +2336,27 @@ span {
     padding: 14px 18px;
     border: 1px solid #eceff2;
     outline: none;
+    // appearance: none;
+    
 }
-
-
+// .product-page__form-first .product-page__select::before {
+//     content: "";
+//     display: block;
+//     background-image: url('../images/product-page/icon-down.png');
+//     width: 11px;
+//     height: 6px;
+//     position: absolute;
+//     top: 8px;
+//     right: 0px;
+//     cursor: pointer;
+// }
 .product-page__settings {
     width: 93px;
     height: 50px;
     border: 1px solid #eceff2;
     text-align: center;
     padding: 10px;
+    
 }
 
 .product-page__settings .active {
@@ -3147,8 +3160,9 @@ span {
     display: flex;
     align-items: center;
     border-right: 1px solid #eceff2;
-    padding-left: 30px;
+    padding-left: 26px;
     padding-right: 50px;
+    position: relative;
 
 }
 
@@ -3167,24 +3181,36 @@ span {
     display: block;
     position: absolute;
     top: 8px;
-    right: -24px;
+    right: -20px;
     cursor: pointer;
 
 }
-
+.favorites-page__filter-wrapper .favorites-page__filter-menu {
+    position: absolute;
+}
 .favorites-page__filter-menu {
     display: none;
-    position: absolute;
     width: 270px;
     min-height: 250px;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     z-index: 88;
     padding: 30px 25px;
-    right: -175px;
-    top: 45px;
+    right: -128px;
+    top: 77px;
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
     border-top: 1px solid #0674ec;
+    position: relative;
+}
+.favorites-page__filter-menu::before {
+    content: "";
+    background-image: url('../images/header/tringle.png');
+    width: 65px;
+    height: 65px;
+    display: block;
+    position: absolute;
+    top: -32px;
+    right: 132px;
 }
 
 .favorites-page__filter-menu a {
