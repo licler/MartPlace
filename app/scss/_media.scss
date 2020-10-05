@@ -1,0 +1,34 @@
+@media (max-width: 1150px) {
+    .footer__items {
+        flex-wrap: wrap;
+    }
+    .footer__col {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer__phone {
+        margin-right: 20px;
+    }
+    .footer__email {
+        margin-right: 20px; 
+    }
+}
+
+@media (max-width: 920px) {
+    .footer__menu {
+        min-width: 100%;
+        
+    }
+    .footer__list li {
+        margin-right: 15px;
+    }
+    .footer__menu a {
+        font-size: 18px;
+    }
+    .footer__phone,
+    .footer__email,
+    .footer__map,
+    .footer__text {
+        font-size: 18px;
+    }
+}
