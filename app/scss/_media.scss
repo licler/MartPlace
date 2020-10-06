@@ -1,34 +1,155 @@
+// start footer
+
 @media (max-width: 1150px) {
     .footer__items {
         flex-wrap: wrap;
     }
+
     .footer__col {
         min-width: 100%;
         margin-bottom: 30px;
     }
+
     .footer__phone {
         margin-right: 20px;
     }
+
     .footer__email {
-        margin-right: 20px; 
+        margin-right: 20px;
     }
 }
 
 @media (max-width: 920px) {
+    .footer__items {
+        padding: 0px 10px;
+    }
+
     .footer__menu {
         min-width: 100%;
-        
+
     }
+
     .footer__list li {
         margin-right: 15px;
     }
+
     .footer__menu a {
         font-size: 18px;
     }
+
     .footer__phone,
     .footer__email,
     .footer__map,
-    .footer__text {
+    .footer__text,
+    .footer__desc {
         font-size: 18px;
+    }
+
+    .footer__form {
+        margin-bottom: 40px;
+        // min-width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    .footer__title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer__list {
+        margin-bottom: 20px;
+    }
+
+    .footer__social {
+        text-align: center;
+    }
+
+    .footer__desc {
+        margin-bottom: 50px;
+    }
+
+    // .email-btn {
+    //     right: 248px;
+    // }
+    // .email__input {
+    //     margin: auto;
+    // }
+
+}
+
+@media (max-width: 416px) {
+
+
+    // .email-btn {
+    //     width: 100px;
+    // }
+
+    .email__input {
+        width: 320px;
+    }
+}
+
+@media (max-width: 395px) {
+    .footer__social-link .social {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__desc {
+        margin-bottom: 80px;
+    }
+
+    .email-btn {
+        right: -2px;
+    }
+}
+
+@media (max-width: 350px) {
+    .email__input {
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .footer__social-link .social {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+// finish footer
+
+// 
+@media (max-width: 920px) {
+
+    .create__title,
+    .create__main-title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 590px) {
+    .create__link {
+        width: 155px;
+        padding: 16px 5px;
+        margin-top: -24px;
+    }
+
+    .create__title,
+    .create__main-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 45px;
+    }
+    .create__desc {
+        line-height: 45px;
+    }
+}
+@media (max-width: 415px) {
+    .create__link {
+        width: 100%;
     }
 }
