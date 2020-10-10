@@ -1774,17 +1774,17 @@ span {
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
-
 }
 
 .news__item-viewing {
     display: flex;
 }
 
-.lnr-eye {
+.news__item-viewing .lnr-eye {
     font-size: 15px;
     color: #7e7e7e;
     margin-right: 8px;
+    margin-left: 5px;
 }
 
 .news__item-viewing a {
