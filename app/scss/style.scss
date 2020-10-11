@@ -106,7 +106,10 @@ span {
 .header__menu {
     background-color: #fff;
 }
-
+.header__wrapper-btn,
+.menu__big-btn {
+    display: none;
+}
 .header__menu-inner {
     display: flex;
     height: 80px;
@@ -226,9 +229,7 @@ span {
 }
 
 .page-create__form {
-
     position: relative;
-
     width: 555px;
     margin: 0 auto;
 

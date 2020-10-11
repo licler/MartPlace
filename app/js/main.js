@@ -16,14 +16,6 @@ $(function(){
         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/featured/previous.png" alt=""></button>',
         nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/featured/next.png" alt=""></button>',
         
-        responsive: [
-          {
-            breakpoint: 1150,
-            settings: {
-              arrows: true
-            }
-          }
-        ]
 
       });
       $('.followers__inner-box').slick({
@@ -31,7 +23,7 @@ $(function(){
         slidesToScroll: 2,
         arrows: true,
         prevArrow: '<button type="button" class="slick-btn slick-btn--blue-theme slick-prev"><img src="images/featured/previous.png" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-btn slick-btn--blue-theme slick-next"><img src="images/featured/next.png" alt=""></button>'
+        nextArrow: '<button type="button" class="slick-btn slick-btn--blue-theme slick-next"><img src="images/featured/next.png" alt=""></button>',
       });
 
       $('.clients__slider').slick({
@@ -70,7 +62,28 @@ $(function(){
           return false;
         });
 
-var mixer = mixitup('.products__inner-box');
+
+     
+      $('.menu__big-btn').on('click', function(){
+        $('.menu__list').slideToggle();
+      });
+
+
+
+      $('.header__wrapper-btn').on('click', function(){
+        $('.header__wrapper').toggleClass('active');
+      });
+        
+      
+        
+
+
+
+
+
+
+
+  var mixer = mixitup('.products__inner-box');
 
 
 });
