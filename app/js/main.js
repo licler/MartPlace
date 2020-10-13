@@ -15,8 +15,16 @@ $(function(){
         arrows: true,
         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/featured/previous.png" alt=""></button>',
         nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/featured/next.png" alt=""></button>',
-        
-
+        responsive: [
+          {
+            breakpoint: 830,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          },
+        ]
       });
       $('.followers__inner-box').slick({
         slidesToShow: 3,
@@ -24,6 +32,28 @@ $(function(){
         arrows: true,
         prevArrow: '<button type="button" class="slick-btn slick-btn--blue-theme slick-prev"><img src="images/featured/previous.png" alt=""></button>',
         nextArrow: '<button type="button" class="slick-btn slick-btn--blue-theme slick-next"><img src="images/featured/next.png" alt=""></button>',
+        responsive: [
+          {
+            breakpoint: 1170,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: true
+            }
+          },
+          
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          },
+        ]
+
+
+
       });
 
       $('.clients__slider').slick({

@@ -48,10 +48,6 @@
 
     .footer__form {
         margin-bottom: 40px;
-        // min-width: 100%;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
     }
 
     .footer__title {
@@ -70,22 +66,9 @@
     .footer__desc {
         margin-bottom: 50px;
     }
-
-    // .email-btn {
-    //     right: 248px;
-    // }
-    // .email__input {
-    //     margin: auto;
-    // }
-
 }
 
 @media (max-width: 416px) {
-
-
-    // .email-btn {
-    //     width: 100px;
-    // }
 
     .email__input {
         width: 320px;
@@ -604,9 +587,17 @@
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 580px) {
     .products__inner-block {
         height: 160px;
+    }
+
+    .products__inner-block {
+        padding: 11px 14px 11px 14px;
+    }
+
+    .products__inner-btn button {
+        padding: 10px 16px;
     }
 }
 
@@ -778,6 +769,11 @@
     .advantages__title span {
         font-size: 25px;
     }
+
+    .advantages__items {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 530px) {
@@ -788,6 +784,7 @@
     .advantages__title {
         width: 500px;
     }
+
 }
 
 @media (max-width: 415px) {
@@ -822,9 +819,33 @@
     }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1180px) {
+    .sell-shopping {
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 950px) {
     .sell-shopping__inner {
-        width: 100%;
+        width: 750px;
+    }
+}
+
+@media (max-width: 760px) {
+    .sell-shopping__inner {
+        width: 500px;
+    }
+    .sell-shopping__item {
+        padding: 20px;
+    }
+    .sell-shopping__inner {
+        padding: 20px;
+        width: 565px;
+    }
+    .sell-shopping__desc {
+        width: 500px;
     }
 }
 
@@ -837,6 +858,23 @@
         width: 300px;
     }
 }
+@media (max-width: 530px)  {
+    .sell-shopping__inner {
+        width: 400px;
+    }
+    .sell-shopping__title {
+        font-size: 33px;
+    }
+}
+@media (max-width: 420px) {
+    .sell-shopping__inner {
+        width: 300px;
+    }
+    .sell-shopping__title {
+        font-size: 22px;
+    }
+}
+
 
 // end sell-shopping
 
@@ -2044,6 +2082,7 @@
     .menu__big-btn {
         position: absolute;
         top: 26px;
+        z-index: 100;
     }
 
     .menu__list li:hover .active {
@@ -2120,6 +2159,7 @@
         right: 0;
         top: 0;
         overflow-x: hidden;
+        z-index: 100;
 
         .header__top-inner &::before {
             position: absolute;
@@ -2356,9 +2396,12 @@
     .featured__content-wrapper {
         width: 555px;
     }
+    .slick-slider {
+        margin: 0 auto;
+    }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 610px) {
     .featured__content-wrapper {
         width: 400px;
     }
@@ -2368,8 +2411,9 @@
         height: 324px;
     }
 
-    .featured__slider-item {
+    .slick-slider {
         width: 400px;
+        margin: 0 auto;
     }
 
     .featured__item-content {
@@ -2384,12 +2428,43 @@
     .featured__item-text {
         font-size: 14px;
     }
+
+    .featured__link-btn-one {
+        border-radius: 20px;
+        left: 60px;
+        padding: 15px;
+    }
+
+    .featured__link-btn-two {
+        border-radius: 20px;
+        right: 60px;
+        padding: 15px;
+    }
+
+    .featured__wrapper,
+    .followers__wrapper,
+    .products__wrapper {
+        height: 85px;
+        padding: 33px;
+    }
+
+    .featured__title,
+    .followers__title,
+    .products__title {
+        font-size: 25px;
+    }
+
+    .products__filter-desc {
+        display: none;
+    }
+
 }
+
 @media (max-width: 460px) {
     .featured__item-info {
         padding-left: 20px;
     }
-    
+
 }
 
 @media (max-width: 445px) {
@@ -2402,13 +2477,13 @@
         height: 243px;
     }
 
-    .featured__slider-item {
+    .slick-slider {
         width: 300px;
     }
 
     .featured__item-content {
         width: 300px;
-        padding: 25px;
+        padding: 20px;
     }
 
     .featured__item-title {
@@ -2422,7 +2497,11 @@
 
     .featured__item-category {
         font-size: 13px;
-        padding-left: 20px;
+        padding-left: 15px;
+    }
+
+    .featured__item-category::before {
+        left: -8px;
     }
 
     .featured__avatar-name {
@@ -2433,36 +2512,168 @@
         width: 22px;
         height: 22px;
     }
+
     .featured__inner-btn button {
         padding: 10px;
-        margin-left: 0px;
+        margin-left: 9px;
         font-size: 11px;
     }
+
     .featured__item-price {
-        width: 80px;
+        width: 70px;
     }
+
     .featured__item-price a {
         font-size: 14px;
     }
+
     .featured__info-inner {
         padding-top: 5px;
     }
+
     .featured__item-like span {
         font-size: 16px;
     }
+
+    .featured__item-like a {
+        font-size: 14px;
+    }
+
     .featured__item-basket span {
         font-size: 16px;
     }
 
+    .featured__item-basket a {
+        font-size: 14px;
+    }
+
+    .rate-star {
+        margin-left: 11px;
+    }
+
+    .featured__link-btn-two {
+        border-radius: 20px;
+        right: 35px;
+        padding: 9px;
+    }
+
+    .featured__link-btn-one {
+        border-radius: 20px;
+        left: 35px;
+        padding: 9px;
+    }
+
+    .featured__wrapper,
+    .followers__wrapper,
+    .products__wrapper {
+        height: 60px;
+        padding: 15px;
+    }
+
+    .featured__title,
+    .followewrs__title,
+    .products__title {
+        font-size: 17px;
+    }
 }
+
 @media (max-width: 340px) {
     .featured__item-category {
         padding-left: 0px;
     }
+
     .featured__item-category::before {
         left: -22px;
+    }
+
+    .featured__content-wrapper {
+        width: 280px;
+    }
+
+    .featured__box-images img {
+        width: 280px;
+        height: 243px;
+    }
+
+    .slick-slider {
+        width: 280px;
+    }
+
+    .featured__item-content {
+        width: 280px;
+        padding: 25px;
+    }
+
+    .featured__item-info {
+        padding-left: 13px;
+    }
+
+    .featured__item-basket span {
+        margin-left: 25px;
+    }
+
+    .featured__item-like span {
+        margin-left: 25px;
+    }
+
+    .featured__item-price a {
+        font-size: 12px;
+    }
+
+    .featured__item-price {
+        width: 63px;
     }
 }
 
 
 // end slider index.html
+
+// start followers slider
+
+@media (max-width: 445px) {
+    .followers__item-content {
+        padding: 20px;
+    }
+
+    .followers__item-title {
+        font-size: 18px;
+    }
+
+    .followers__item-text {
+        font-size: 14px;
+    }
+
+    .followers__item-info {
+        padding: 15px;
+    }
+
+    .followers__item-basket .lnr-cart {
+        margin-left: -40px;
+    }
+
+    .followers__item-basket span {
+        font-size: 16px;
+    }
+
+    .followers__item-basket a {
+        font-size: 14px;
+    }
+
+    .followers__item-like span {
+        font-size: 16px;
+    }
+
+    .followers__item-like a {
+        font-size: 14px;
+    }
+
+    .followers__item-price {
+        width: 60px;
+    }
+
+    .followers__item-price a {
+        font-size: 14px;
+    }
+}
+
+// end followers slider
