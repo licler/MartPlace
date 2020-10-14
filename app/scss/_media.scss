@@ -831,23 +831,29 @@
     .sell-shopping__inner {
         width: 750px;
     }
+
 }
 
 @media (max-width: 760px) {
     .sell-shopping__inner {
         width: 500px;
     }
+
     .sell-shopping__item {
         padding: 20px;
     }
+
     .sell-shopping__inner {
         padding: 20px;
         width: 565px;
     }
+
     .sell-shopping__desc {
         width: 500px;
     }
+
 }
+
 
 @media (max-width: 715px) {
     .sell-shopping__inner {
@@ -858,21 +864,56 @@
         width: 300px;
     }
 }
-@media (max-width: 530px)  {
+
+@media (max-width: 530px) {
     .sell-shopping__inner {
-        width: 400px;
+        width: 500px;
     }
+
     .sell-shopping__title {
         font-size: 33px;
     }
+
+    .sell-shopping__box img {
+        width: 80px;
+        height: 67px;
+    }
 }
+
 @media (max-width: 420px) {
     .sell-shopping__inner {
-        width: 300px;
+        width: 400px;
     }
+
+    .sell-shopping__item {
+        padding: 10px;
+    }
+
     .sell-shopping__title {
         font-size: 22px;
     }
+
+    .sell-shopping__desc {
+        width: 240px;
+        font-size: 14px;
+    }
+
+    .sell-shopping__link {
+        font-size: 14px;
+        width: 167px;
+        height: 43px;
+        padding: 13px 15px;
+        margin-top: 24px;
+    }
+
+    .sell-shopping__title {
+        font-size: 20px;
+    }
+
+    .sell-shopping__box {
+        margin-bottom: 30px;
+    }
+
 }
 
 
@@ -2396,6 +2437,7 @@
     .featured__content-wrapper {
         width: 555px;
     }
+
     .slick-slider {
         margin: 0 auto;
     }
@@ -2677,3 +2719,52 @@
 }
 
 // end followers slider
+@media (max-width: 635px) {
+    .clients__item {
+        width: 555px;
+        margin-bottom: 18px;
+        border-left: none;
+    }
+
+    .slick-slide {
+        width: 582px;
+        margin: 0 auto;
+
+    }
+    .clients__item-text {
+        width: 400px;
+        font-size: 14px;
+    }
+    .clients__link {
+        width: 155px;
+        padding: 20px 13px;
+    }
+
+}
+
+@media (max-width: 605px) {
+    .clients__item-box img {
+        width: 60px;
+        height: 60px;
+    }
+    .clients__item-text {
+        width: 350px;
+    }
+    .clients__item .lnr-bubble {
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    .clients__item-text {
+        width: 220px;
+        font-size: 13px;
+    }
+    .clients__item-title {
+        font-size: 17px;
+    }
+    .clients__item-box img {
+        width: 50px;
+        height: 50px;
+    }
+    
+}

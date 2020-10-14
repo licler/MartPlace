@@ -61,7 +61,34 @@ $(function(){
         slidesToScroll: 2,
         arrows: true,
         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/featured/previous.png" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/featured/next.png" alt=""></button>'
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/featured/next.png" alt=""></button>',
+        responsive: [
+          {
+            breakpoint: 1170,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          },
+          
+            {
+              breakpoint: 1100,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+              }
+            },
+
+
+
+        ]
+
+
+
+
+
       });
 
       $(".js-range-slider").ionRangeSlider({
@@ -110,6 +137,10 @@ $(function(){
 
 
 
+      $('.aside__title-button').on('click', function(){
+       $('.aside__title').toggleClass('aside__title--expanded');
+        $('.category__list').toggleClass('category__list--active');
+      })
 
 
 
