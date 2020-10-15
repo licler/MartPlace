@@ -60,8 +60,8 @@ $(function(){
         slidesToShow: 2,
         slidesToScroll: 2,
         arrows: true,
-        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/featured/previous.png" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/featured/next.png" alt=""></button>',
+        prevArrow: '<button type="button" class="slick-btn slick-btn--one-theme slick-prev slick-prev--one-theme"><img class="slick-prev--one-images" src="images/clients/arrows-left.png" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-btn--one-theme slick-next slick-next--one-theme"><img class="slick-next--one-images" src="images/clients/arrows-right.png" alt=""></button>',
         responsive: [
           {
             breakpoint: 1170,
@@ -137,10 +137,22 @@ $(function(){
 
 
 
-      $('.aside__title-button').on('click', function(){
-       $('.aside__title').toggleClass('aside__title--expanded');
+      $('.category__title-button').on('click', function(){
+       $('.aside__category-title').toggleClass('aside__category-title--expanded');
         $('.category__list').toggleClass('category__list--active');
       })
+
+      $('.filter__title-button').on('click', function(){
+        $('.aside__filter-title').toggleClass('.aside__filter-title--expanded');
+         $('.filter__list').toggleClass('filter__list--active');
+       })
+
+       $('.price-range__title-btn').on('click', function(){
+        $('.aside__price-range-title').toggleClass('aside__price-range-title--expanded');
+         $('.filter__list').toggleClass('filter__list--active');
+       })
+
+
 
 
 

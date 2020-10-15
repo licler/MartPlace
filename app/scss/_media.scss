@@ -674,7 +674,7 @@
     .results__item-box .lnr-cloud-download,
     .results__item-box .lnr-smile,
     .results__item-box .lnr-users {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 12px;
     }
 
@@ -684,7 +684,7 @@
     }
 
     .results__item-desc {
-        font-size: 18px;
+        font-size: 20px;
         width: 104px;
     }
 
@@ -2452,7 +2452,9 @@
         width: 400px;
         height: 324px;
     }
-
+    .featured__box-images:hover {
+        min-height: 325px;
+    }
     .slick-slider {
         width: 400px;
         margin: 0 auto;
@@ -2512,6 +2514,9 @@
 @media (max-width: 445px) {
     .featured__content-wrapper {
         width: 300px;
+    }
+    .featured__box-images:hover {
+        min-height: 243px;
     }
 
     .featured__box-images img {
@@ -2631,6 +2636,9 @@
     .featured__content-wrapper {
         width: 280px;
     }
+    .featured__box-images:hover {
+        min-height: 240px;
+    }
 
     .featured__box-images img {
         width: 280px;
@@ -2719,10 +2727,22 @@
 }
 
 // end followers slider
+
+
+// start clients slider
+
+@media (max-width: 730px) {
+    .clients__title,
+    .clients__title span {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    
+}
 @media (max-width: 635px) {
     .clients__item {
         width: 555px;
-        margin-bottom: 18px;
         border-left: none;
     }
 
@@ -2736,8 +2756,13 @@
         font-size: 14px;
     }
     .clients__link {
-        width: 155px;
-        padding: 20px 13px;
+        width: 140px;
+        height: 44px;
+        padding: 15px 13px;
+        font-size: 14px;
+    }
+    .clients__item-title {
+        font-size: 18px;
     }
 
 }
@@ -2768,3 +2793,40 @@
     }
     
 }
+
+
+@media (max-width: 435px) {
+    .clients__title,
+    .clients__title span {
+        font-size: 18px;
+        width: 300px;
+    }
+    .clients__desc {
+        font-size: 14px;
+    }
+    .clients__item-title {
+        font-size: 15px;
+    }
+    .clients__item-profession {
+        font-size: 14px;
+    }
+}
+@media (max-width: 340px) {
+    .clients__title,
+    .clients__title span {
+        font-size: 17px;
+        width: 280px;
+    }
+    .clients__desc {
+        font-size: 13px;
+    }
+    .clients__item-title {
+        font-size: 14px;
+    }
+    .clients__item-profession {
+        font-size: 13px;
+    }
+}
+
+
+// end clients slider

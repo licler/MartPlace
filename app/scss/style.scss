@@ -771,7 +771,41 @@ span {
 .slick-btn--blue-theme {
     background-color: #0674ec;
 }
+.slick-btn--one-theme {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.slick-prev--one-theme {
+    position: absolute;
+    left: -28px;
+    z-index: 5;
+    top: 162px;
+}
+.slick-next--one-theme {
+    position: absolute;
+    right: -24px;
+    z-index: 5;
+    top: 162px;
+}
 
+.slick-prev--one-images {
+    position: absolute;
+    left: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slick-next--one-images {
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+  
 // end featured
 
 
@@ -2117,14 +2151,18 @@ span {
     width: 262px;
 }
 
-.aside__title {
+.aside__category-title,
+.aside__filter-title,
+.aside__price-range-title {
     font-size: 20px;
     border-bottom: 1px solid #e7ebee;
     padding: 30px 0 25px;
     position: relative;
 }
 
-.aside__title::after {
+.aside__category-title::after,
+.aside__filter-title::after,
+.aside__price-range-title::after {
     content: "";
     background-image: url('../images/product-page/down.png');
     position: absolute;
@@ -2134,10 +2172,12 @@ span {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-
+    cursor: pointer;
 }
 
-.aside__title--expanded:after {
+.aside__category-title--expanded:after,
+.aside__filter-title--expanded:after,
+.aside__price-range-title--expanded:after {
     content: "";
     background-image: url('../images/product-page/down.png');
     position: absolute;
@@ -2148,15 +2188,21 @@ span {
     right: 0;
     transform: translateY(-50%);
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
-.aside__title-button {
+.category__title-button,
+.filter__title-button,
+.price-range__title-btn {
     border: none;
     outline: none;
     background-color: transparent;
+   
 }
 
-.aside__title-button:hover {
+.category__title-button:hover,
+.filter__title-button:hover,
+.price-range__title-btn:hover {
     font-weight: 700;
     cursor: pointer;
 }
@@ -2204,6 +2250,10 @@ span {
 
 .category__list--active {
     display: block;
+    
+}
+.filter__list--active {
+    display: block;
 }
 
 .category__list a:hover,
@@ -2218,6 +2268,7 @@ span {
 }
 
 .filter__list {
+    display: none;
     padding-top: 10px;
 
     li {
