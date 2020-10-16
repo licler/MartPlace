@@ -143,13 +143,13 @@ $(function(){
       })
 
       $('.filter__title-button').on('click', function(){
-        $('.aside__filter-title').toggleClass('.aside__filter-title--expanded');
+        $('.aside__filter-title').toggleClass('aside__filter-title--expanded');
          $('.filter__list').toggleClass('filter__list--active');
        })
 
-       $('.price-range__title-btn').on('click', function(){
-        $('.aside__price-range-title').toggleClass('aside__price-range-title--expanded');
-         $('.filter__list').toggleClass('filter__list--active');
+       $('.price__title-button').on('click', function(){
+        $('.aside__price-title').toggleClass('aside__price-title--expanded');
+         $('.price-range__list').toggleClass('price-range__list--active');
        })
 
 

@@ -2146,23 +2146,23 @@ span {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    padding: 0px 30px 30px;
+    padding: 0px 30px 0px;
     margin-bottom: 30px;
     width: 262px;
 }
 
 .aside__category-title,
 .aside__filter-title,
-.aside__price-range-title {
+.aside__price-title {
     font-size: 20px;
-    border-bottom: 1px solid #e7ebee;
+    // border-bottom: 1px solid #e7ebee;
     padding: 30px 0 25px;
     position: relative;
 }
 
 .aside__category-title::after,
 .aside__filter-title::after,
-.aside__price-range-title::after {
+.aside__price-title::after {
     content: "";
     background-image: url('../images/product-page/down.png');
     position: absolute;
@@ -2177,7 +2177,7 @@ span {
 
 .aside__category-title--expanded:after,
 .aside__filter-title--expanded:after,
-.aside__price-range-title--expanded:after {
+.aside__price-title--expanded:after {
     content: "";
     background-image: url('../images/product-page/down.png');
     position: absolute;
@@ -2193,7 +2193,7 @@ span {
 
 .category__title-button,
 .filter__title-button,
-.price-range__title-btn {
+.price__title-button {
     border: none;
     outline: none;
     background-color: transparent;
@@ -2202,18 +2202,12 @@ span {
 
 .category__title-button:hover,
 .filter__title-button:hover,
-.price-range__title-btn:hover {
+.price__title-button:hover {
     font-weight: 700;
     cursor: pointer;
 }
 
-// .aside__title-button:after {
 
-// }
-
-// .aside__title-button--expanded {
-
-// }
 
 .category {
     margin-top: 75px;
@@ -2222,6 +2216,8 @@ span {
 .category__list {
     display: none;
     padding-top: 10px;
+    border-top: 1px solid #e7ebee;
+    padding-bottom: 30px;
 
     li {
         padding: 10px 0;
@@ -2252,9 +2248,7 @@ span {
     display: block;
     
 }
-.filter__list--active {
-    display: block;
-}
+
 
 .category__list a:hover,
 .filter__list a:hover {
@@ -2270,6 +2264,8 @@ span {
 .filter__list {
     display: none;
     padding-top: 10px;
+    border-top: 1px solid #e7ebee;
+    padding-bottom: 30px;
 
     li {
         padding: 10px 0;
@@ -2295,12 +2291,21 @@ span {
         color: #555555;
     }
 }
-
+.filter__list--active {
+    display: block;
+}
 .price-range form {
     padding-top: 25px;
 
 }
-
+.price-range__list {
+    display: none;
+    border-top: 1px solid #e7ebee;
+    padding-bottom: 30px;
+}
+.price-range__list--active {
+    display: block;
+}
 .price-range button {
     margin-top: 65px;
 }
