@@ -151,6 +151,11 @@ $(function(){
         $('.aside__price-title').toggleClass('aside__price-title--expanded');
          $('.price-range__list').toggleClass('price-range__list--active');
        })
+       
+      // $('.version__title-button').on('click', function(){
+      //   $('.version__category-title').toggleClass('version__category-title--expanded'); 
+      //    $('.version__category-inner').toggleClass('version__category-inner--active');
+      //  })
 
 
 
