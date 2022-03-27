@@ -353,6 +353,9 @@ span {
     right: 0;
     z-index: 7;
 }
+.create__form input:focus {
+    border: 2px solid #0674ec;
+}
 
 .create__box-one {
     width: 1108px;
@@ -416,6 +419,9 @@ span {
     position: relative;
 
 }
+.create__select:focus {
+    border: 2px solid #0674ec;
+}
 
 .create__box .lnr-chevron-down {
     position: absolute;
@@ -439,7 +445,11 @@ span {
     top: 40px;
     right: 40px;
 }
-
+.create-btn:hover {
+    background-color: #fff;
+    color: #0674ec;
+    transition: all .5s linear;
+}
 // end create
 
 
@@ -665,6 +675,11 @@ span {
         margin-bottom: 5px;
     }
 }
+.featured__inner-btn a:hover {
+    color:#0674ec;
+    font-weight: 700;
+    transition: all .5s linear;
+}
 
 .featured__avatar {
     width: 28px;
@@ -785,6 +800,7 @@ span {
 
 }
 
+
 .slick-btn--blue-theme {
     background-color: #0674ec;
 }
@@ -859,6 +875,7 @@ span {
     display: block;
     position: relative;
     cursor: pointer;
+    padding: 0 10px;
 }
 
 .products__filter-btn {
@@ -1764,6 +1781,13 @@ span {
     margin: 0 auto;
     display: block;
     text-align: center;
+    border: 1px solid #fff;
+}
+.clients__link:hover {
+    background-color: #fff;
+    color: #0674ec;
+    transition: all .3s;
+    border: 2px solid #0674ec;
 }
 
 // end clients
@@ -1779,7 +1803,9 @@ span {
     display: flex;
     justify-content: space-between;
 }
-
+.news__item:hover {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
 .news__item-title {
     font-size: 22px;
     font-weight: 500;
